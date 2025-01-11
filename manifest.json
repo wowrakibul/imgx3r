@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Image Extractor",
+    "version": "1.0",
+    "description": "Extract and download images from web pages.",
+    "permissions": [
+        "activeTab",
+        "downloads",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icons/icon16.png"
+    },
+    "background": {
+        "service_worker": "popup.js"
+    }
+}
